@@ -47,7 +47,7 @@ OwnerGuid=0
 
 Start the server and make sure you join it before anyone else, as the game will automatically assign the admin/owner role to the first player joining.
 
-### If you can't progress past the first mission
+## If you can't progress past the first mission
 
 If you can't progress past the first mission, you have to start a new game via the "Server admin" tab after connecting to the server. Click on "Manage game session" followed by "Start a new game" (and confirm by clicking "Start a new game" in the popout):
 
