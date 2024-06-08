@@ -51,10 +51,8 @@ Start the server and make sure you join it before anyone else, as the game will 
 
 If you can't progress past the first mission, you have to start a new game via the "Server admin" tab after connecting to the server. Click on "Manage game session" followed by "Start a new game" (and confirm by clicking "Start a new game" in the popout):
 
-![Server admin > Manage game session](./readme_assets/new_game_1.png)
-
+![Server admin > Manage game session](./readme_assets/new_game_1.png)\
 _Server admin > Manage game session_
 
-![Start a new game > Start a new game](./readme_assets/new_game_2.png)
-
+![Start a new game > Start a new game](./readme_assets/new_game_2.png)\
 _Start a new game > Start a new game_
