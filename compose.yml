@@ -1,6 +1,11 @@
 services:
   astroneer:
-    build: .
+    build:
+      context: .
+      tags:
+        - whalybird/astroneer-server:latest
+    stdin_open: true
+    tty: true
     ports:
       - 7777:7777/udp
     volumes:
