@@ -1,0 +1,8 @@
+services:
+  astroneer:
+    build: .
+    ports:
+      - 7777:7777/udp
+    volumes:
+      - ./saved:/astrotux/AstroneerServer/Astro/Saved
+      # - ./launcher.toml:/astrotux/launcher.toml
