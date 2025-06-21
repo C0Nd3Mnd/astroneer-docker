@@ -12,7 +12,6 @@ services:
   astroneer:
     image: whalybird/astroneer-server:latest
     restart: unless-stopped
-    container_name: astroneer
     stdin_open: true
     tty: true
     ports:
@@ -21,9 +20,17 @@ services:
       - ./saved:/astrotux/AstroneerServer/Astro/Saved
 ```
 
+## Encryption support (experimental)
+
+As of Wine 10.6 and GnuTLS 3.8.3, server encryption is supported. This container image now has an `experimental` tag that supports encryption and enables it by default. After some testing I'm planning to make this the default image (`latest` tag).
+
+If you want to use encryption right now, change the `image` line in your `compose.yml` to `image: whalybird/astroneer-server:experimental`. Make sure to **remove** the `net.AllowEncryption=False` line from any client's `Engine.ini` (see [Configuring clients](#configuring-clients)).
+
+You can also disable encryption on this `experimental` image by setting `DISABLE_ENCRYPTION=true` in your `compose.yml`.
+
 ## Interacting with the AstroTuxLauncher console
 
-You can interact with the console by using `docker attach <container name>`. If you used the compose example from above, that'd be `docker attach astroneer`. Detach using `CTRL+p` + `CTRL+q`, using `CTRL+c` will shutdown the server.
+You can interact with the console by using `docker compose attach astroneer`. If you used the compose example from above, that'd be `docker attach astroneer`. Detach using `CTRL+p` + `CTRL+q`, using `CTRL+c` will shutdown the server.
 
 ## Configuring clients
 
