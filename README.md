@@ -30,7 +30,7 @@ You can also disable encryption on this `experimental` image by setting `DISABLE
 
 ## Interacting with the AstroTuxLauncher console
 
-You can interact with the console by using `docker compose attach astroneer`. If you used the compose example from above, that'd be `docker attach astroneer`. Detach using `CTRL+p` + `CTRL+q`, using `CTRL+c` will shutdown the server.
+You can interact with the console by using `docker compose attach astroneer`. Detach using `CTRL+p` + `CTRL+q`, using `CTRL+c` will shutdown the server.
 
 ## Configuring clients
 
