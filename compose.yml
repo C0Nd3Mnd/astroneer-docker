@@ -4,6 +4,7 @@ services:
       context: .
       tags:
         - whalybird/astroneer-server:latest
+        - whalybird/astroneer-server:experimental
     stdin_open: true
     tty: true
     ports:
