@@ -2,6 +2,12 @@
 
 cd /astrotux
 
+if [[ "$FORCE_CHOWN" =~ ^([Tt][Rr][Uu][Ee]|1|[Yy][Ee][Ss])$ ]]; then
+  echo Force chowning /astrotux folder.
+  chown -R $(id -u):$(id -g) /astrotux
+  echo Done chowning.
+fi
+
 source ./venv/bin/activate
 
 python3 AstroTuxLauncher.py install

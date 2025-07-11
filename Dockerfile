@@ -25,5 +25,6 @@ COPY --chmod=0755 ./entrypoint.sh /entrypoint.sh
 RUN /install.sh
 
 ENV DISABLE_ENCRYPTION=false
+ENV FORCE_CHOWN=false
 
 ENTRYPOINT [ "/entrypoint.sh" ]
